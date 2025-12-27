@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <title>2D 턴제 게임 MVP</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h2 id="status"></h2>
+<h2 id="title">나라를 선택하세요</h2>
 
-  <div id="board"></div>
+<div id="countrySelect">
+  <button onclick="selectCountry('USA')">🇺🇸 미국</button>
+  <button onclick="selectCountry('RUSSIA')">🇷🇺 러시아</button>
+</div>
 
-  <button id="endTurnBtn">턴 종료</button>
+<div id="boardSizeSelect">
+  <p>보드 크기를 선택하세요</p>
+  <button onclick="selectBoardSize(4)">4 × 4</button>
+  <button onclick="selectBoardSize(5)">5 × 5</button>
+  <button onclick="selectBoardSize(6)">6 × 6</button>
+</div>
 
-  <script src="game.js"></script>
-</body>
-</html>
+<h2 id="status" style="display:none;"></h2>
+<h3 id="phase"></h3>
+<div id="board" style="display:none;"></div>
+
+<button id="nextPhaseBtn" style="display:none;">다음 단계</button>
+<button id="endTurnBtn" style="display:none;">턴 종료</button>
