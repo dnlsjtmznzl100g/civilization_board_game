@@ -1,5 +1,4 @@
 // src/process/handlers/selectMap.js
-
 import { gameState } from "../../core/gameState.js";
 import { MAP_SIZE } from "../../core/config.js";
 import { initMap } from "../../systems/map/mapInit.js";

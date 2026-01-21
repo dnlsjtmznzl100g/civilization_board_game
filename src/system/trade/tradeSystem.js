@@ -1,7 +1,6 @@
 import { gameState } from "../../core/gameState.js";
 import { calculateTradeIncome } from "./tradeRules.js";
 
-
 export function startTradePhase() {
   if (gameState.trade.collectedThisPhase) return;
 

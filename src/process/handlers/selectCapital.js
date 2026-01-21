@@ -1,5 +1,4 @@
 // src/process/handlers/selectCapital.js
-
 import { gameSetupState, gameState } from "../../core/gameState.js";
 import { nextProcess } from "../processFlow.js";
 import { confirmCapitalPlacement } from "../../systems/map/mapInit.js";

@@ -6,6 +6,7 @@ import {
   endTradePhase
 } from "../../systems/trade/tradeSystem.js";
 
+
 export function handleTradeInput(type, data) {
   if (type !== "ui") return;
 

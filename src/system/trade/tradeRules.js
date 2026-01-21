@@ -1,5 +1,6 @@
 import { gameState } from "../../core/gameState.js";
 
+
 export function calculateTradeIncome(player) {
   let total = 0;
 

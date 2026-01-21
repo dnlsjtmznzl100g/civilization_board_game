@@ -9,7 +9,6 @@ export default class UIScene extends Phaser.Scene {
 
   
   }
-
   create() {
     // Phaser UI 레이어 생성
     this.phaseUI = new PhaseUI(this);

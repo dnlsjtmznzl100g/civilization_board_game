@@ -1,6 +1,5 @@
 import { gameState, gameSetupState } from "../../core/gameState.js";
 import { removeUnit } from "../map/mapUtils.js";
-
 /* ================= 수도 배치 ================= */
 
 export function placeCapital(playerId, x, y) {

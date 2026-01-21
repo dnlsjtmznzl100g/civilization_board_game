@@ -1,4 +1,5 @@
 import { gameState } from "../../core/gameState.js";
+
 //* ======= fog 함수 ================== *
 export function revealCornerChunks(chunkCount) {
   const cornerChunks = [

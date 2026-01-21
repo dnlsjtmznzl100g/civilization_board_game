@@ -14,6 +14,7 @@ export default class SetupScene extends Phaser.Scene {
     });
   }
 
+  
   selectCivilization(civId) {
     // inputRouter 또는 시스템 호출
     import("../../input/phases/handleTurnStartInput.js")

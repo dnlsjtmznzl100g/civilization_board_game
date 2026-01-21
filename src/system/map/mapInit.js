@@ -1,6 +1,7 @@
 import { revealCornerChunks } from "./fogSystem.js";
 import { placeResources, placeLuxuryResources } from "./resourceSystem.js";
 
+
 // * =========== 타일 확률 함수 =========
 function getRandomTerrain() {
   const roll = Math.random();

@@ -1,6 +1,7 @@
 import { gameState } from "../../core/gameState.js";
 import { CIVILIZATIONS } from "../../core/constants.js";
 
+
 export default class NationBoardUI {
   constructor(scene) {
     this.scene = scene;

@@ -8,6 +8,7 @@ export const PROCESS = Object.freeze({
   GAME_END: "process-game-end"
 });
 
+
 // *================= PHASE 정의 =================*
 export const PHASES = Object.freeze([
   "TURN_START",

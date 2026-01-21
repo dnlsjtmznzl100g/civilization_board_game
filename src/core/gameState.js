@@ -2,6 +2,7 @@
 
 import { PROCESS } from "./constants.js";
 
+
 //* =============== gameSetupState 정의 ==================*
 export const gameSetupState = {
   players: [

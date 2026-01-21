@@ -1,5 +1,4 @@
 import { gameState } from "../../core/gameState.js";
-
 //*============초반 자원 배치 함수 =============
 export function placeResources() {
   gameState.map.forEach(row => {

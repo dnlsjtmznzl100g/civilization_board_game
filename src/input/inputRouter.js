@@ -1,5 +1,4 @@
 // src/input/inputRouter.js
-
 import { PROCESS } from "../core/constants.js";
 import { gameState } from "../core/gameState.js";
 

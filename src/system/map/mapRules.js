@@ -1,5 +1,4 @@
 // src/systems/map/mapRules.js
-
 import { TILE_TYPES } from "./mapRules.js";
 import { gameState } from "../../core/gameState.js";
 

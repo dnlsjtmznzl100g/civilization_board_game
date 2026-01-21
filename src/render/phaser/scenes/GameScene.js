@@ -11,13 +11,13 @@ export default class GameScene extends Phaser.Scene {
   preload() {
     //this.load.image('tile_plain', 'assets/tiles/plain.png');
     //this.load.image('tile_water', 'assets/tiles/water.png');
-    //this.load.image('city', 'assets/cities/city.png');
     //this.load.image('capital', 'assets/cities/capital.png');
   }
+  
   create() {
     // 그룹 생성
     this.add.rectangle(100, 100, 64, 64, 0xff0000);
-    
+
     this.tileGroup = this.add.group();
     this.cityGroup = this.add.group();
 

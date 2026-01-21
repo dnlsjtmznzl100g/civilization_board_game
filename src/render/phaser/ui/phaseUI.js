@@ -7,6 +7,7 @@ export default class PhaseUI {
     this.texts = [];
   }
 
+  
   render() {
     // 기존 Phaser Text 삭제
     this.texts.forEach(t => t.destroy());

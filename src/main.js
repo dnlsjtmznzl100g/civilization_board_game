@@ -20,5 +20,5 @@ const config = {
     physics: { default: 'arcade', arcade: { debug: false } }
 };
 
-new Phaser.Game(config);
-
+// 게임 실행
+window.game = new Phaser.Game(config);

@@ -3,7 +3,6 @@ import { canFoundCityAt, foundCityAt } from "../../systems/city/citySystem.js";
 import { endTurnStart } from "../../process/phaseFlow.js";
 
 export function handleTurnStartInput(type, x, y, data) {
-
   // UI 입력
   if (type === "ui") {
     if (data.action === "changeGovernment") {

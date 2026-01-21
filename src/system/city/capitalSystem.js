@@ -1,5 +1,4 @@
 // src/system/city/capitalSystem.js
-
 //* ================= 수도 배치 ==================
 // capitalSystem.js
 export function placeCapital(playerId, x, y) {

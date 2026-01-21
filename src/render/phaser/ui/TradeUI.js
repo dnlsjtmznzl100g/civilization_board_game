@@ -1,5 +1,6 @@
 import { gameState } from "../../core/gameState.js";
 
+
 export default class TradeUI {
   constructor(scene) {
     this.scene = scene;

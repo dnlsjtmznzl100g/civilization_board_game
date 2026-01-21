@@ -1,6 +1,6 @@
 import { gameState } from "../core/gameState.js";
 import { handleTradeClick } from "../systems/trade/tradeSystem.js";
-// etc...
+
 
 export function handlePhaseInput(type, x, y, target) {
   switch (gameState.phase) {

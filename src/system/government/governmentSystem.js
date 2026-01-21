@@ -9,6 +9,7 @@ export function canChangeGovernment(player, newGovType) {
   return true;
 }
 
+
 export function changeGovernment(player, newGovType) {
   if (!canChangeGovernment(player, newGovType)) return false;
 
