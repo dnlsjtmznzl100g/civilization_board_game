@@ -1,0 +1,90 @@
+/src
+ ├─ core/ // 상수, config, 전역 상태
+ │   ├─ constants.js        // PROCESS, PHASES, CIVILIZATIONS, GOVERNMENTS
+ │   ├─ gameState.js        // gameState, gameSetupState
+ │   └─ config.js           // TILE_SIZE, BLOCK_SIZE, MAP_SIZE
+ │
+ ├─ process/ // 턴/페이즈 흐름
+ │   ├─ processFlow.js      // nextProcess, startGame, finalizePlayersFromSetup
+ │   ├─ phaseFlow.js        // nextPhase, endTurn, endPlayerAction
+ │   └─ handlers/
+ │       ├─ selectPlayers.js
+ │       ├─ selectNation.js
+ │       ├─ selectMap.js
+ │       └─ selectCapital.js
+ │
+ ├─ systems/ //규칙과 게임 로직
+ │   ├─ map/
+ │   │   ├─ mapInit.js      // initMap, placeResources, fog
+ │   │   ├─ mapRules.js     // canPlaceCapitalAt 등 규칙
+ │   │   ├─ fogSystem.js
+ │   │   ├─ resourceSystem.js
+ │   │   └─ mapUtils.js
+ │   │
+ │   ├─ trade/ // 교역 phase
+ │   │   ├─ tradeSystem.js  // startTradePhase, executeTrade
+ │   │   └─ tradeRules.js
+ │   │
+ │   ├─ government/ // 정부
+ │   │   └─ governmentSystem.js
+ │   ├─ units/         // 유닛 관련
+ │   ├─ era/           // 시대/연구
+ │   ├─ culture/       // 문화
+ │   └─ ui/            // 시스템↔UI 연결
+ │   └─ city/ // 도시 건설
+ │       ├─ citySystem.js
+ │       └─ capitalSystem.js
+ ├─ input/ // 입력 처리 (UI, Phaser, 키보드)
+ │  └─ phases/
+ │  │   ├─ handleTurnStartInput.js // ← 이 함수
+ │  │   ├─ handleTradeInput.js
+ │  │   ├─ handleCityActionInput.js
+ │  │   ├─ handleMoveInput.js
+ │  │   └─ handleTechInput.js
+ │  ├─ inputRouter.js      // 입력 소스 통합 (Phaser, UI, 키보드)
+ │  └─ handlePhaseInput.js   // phase 기준 분기
+ │
+ ├─ render/ // 
+ │   ├─ canvas/             // (임시) 기존 Canvas 렌더
+ │   │   └─ renderMap.js
+ │   │
+ │   └─ phaser/ // Phaser 전용 Scene & UI
+ │       ├─ scenes/
+ │       │   ├─ BootScene.js
+ │       │   ├─ SetupScene.js
+ │       │   ├─ GameScene.js
+ │       │   └─ UIScene.js
+ │       │
+ │       ├─ ui/
+ │       │   ├─ TradeUI.js
+ │       │   ├─ PhaseUI.js
+ │       │   └─ NationBoardUI.js
+ │       │
+ │       └─ renderMapPhaser.js
+ ├─ events/ // 이벤트 기반 통신
+ │   ├─ gameEvents.js      // 이벤트 정의
+ │   ├─ eventBus.js        // on / emit
+ │   └─ listeners/
+ │       ├─ uiListeners.js
+ │       ├─ phaserListeners.js
+ │       └─ logListeners.js
+ ├─ assets/ // phaser 보조
+ │   ├─ tiles/
+ │   ├─ cities/
+ │   ├─ icons/
+ │   ├─ ui/
+ │   └─ audio/
+ ├─ selectors/ // state 읽기 전용
+ │   ├─ playerSelectors.js
+ │   ├─ mapSelectors.js
+ │   ├─ tradeSelectors.js
+ │   └─ phaseSelectors.js
+ ├─ camera/ // 화면 좌표/카메라 처리
+ │   ├─ cameraController.js
+ │   └─ screenPosition.js
+ ├─ debug/ // 개발용 디버그 툴
+ │   ├─ debugOverlay.js
+ │   ├─ stateInspector.js
+ │   └─ quickCommands.js
+ ├─ main.js
+ └─ index.html
