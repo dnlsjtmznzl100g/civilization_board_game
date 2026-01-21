@@ -88,3 +88,20 @@
  │   └─ quickCommands.js
  ├─ main.js
  └─ index.html
+
+
+ src
+ ├─ render/
+ │   └─ phaser/
+ │       ├─ scenes/
+ │       │   ├─ BootScene.js       // Asset preload 및 초기 설정
+ │       │   ├─ SetupScene.js      // 문명/맵/수도 선택 UI
+ │       │   ├─ GameScene.js       // 타일맵, 유닛, 도시, Fog 렌더
+ │       │   └─ UIScene.js         // PhaseUI, NationBoardUI, TradeUI 등
+ │       │
+ │       ├─ ui/
+ │       │   ├─ PhaseUI.js         // Phase 전용 UI
+ │       │   ├─ NationBoardUI.js   // 국가 보드
+ │       │   └─ TradeUI.js         // 교역 UI
+ │       │
+ │       └─ renderMapPhaser.js     // 기존 Canvas renderMap.js에서 Phaser로 변환된 핵심 함수
