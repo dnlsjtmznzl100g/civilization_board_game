@@ -4,6 +4,7 @@ bgm
 게임 광고
 
 ==================
+uvx --from git+https://github.com/github/spec-kit.git specify init<PROJECT_NAME>
 github spec kit << 명세서 쓰는 법 배우기
 typescript와 rust쓰면 에러가 줄어든다
 claude.md로 ai에게 내 취향을 알려줄 수 있다.
